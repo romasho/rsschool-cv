@@ -4,63 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>My CV</title>
-</head>
-<body>
-    
-   <div class="cv">
-    <header>CV</header>
-   <div class="maininf">
-    <p><img id="photo" src="img\Mask_Group.png" alt="photo" width="130"></p>
-    <h1 class="name">Roman Sholomitski</h1>
-    <h2 class="name">Junior FrontEnd Developer</h2>
-   </div>
-   
-
-    <div class="contacts">    
-    <p>Location: Minsk, Belarus</p>
-    <p>E-mail: sholomitskyr@yandex.by</p>
-    <p> Phone: +375299482743</p>
-    </div>
-
-    <div class="about_me">
-        <h3>About me:</h3>
-        Enthusiastic and diligent junior FrontEnd Developer. Could learn new information and try
-        it on practice in a quick way. Prefer work as a part of a team for creating good
-        products. Want to join a team of professionals who will be able to share their 
-        experience. Ready to work hard for achieving the best result.
-    </div>
-
-    <div class="proffessionalSkils">
-        <h3>Professional Skills:</h3>
-        <ul>
-            <li>JavaScript</li>
-            <li>CSS/HTML5</li> 
-            <li>Git</li> 
-            <li>Python</li>
-         </ul>
-       
-
-    <div class="education">
-        <h3>Education:</h3>
-        <ul>
-           <li>2013-2017 - lawyer, BSU</li>
-           <li>March 2021 - May 2021 - Intro to IT, LeverX</li> 
-           <li>July 2021 - now - RS School</li> 
-        </ul> 
-    </div>
-
-    <div class="languages">
-        <h3>Languages:</h3>
-        English - A2+ (have a certificate)</div>
-    
-    <footer> 
-        <a href="https://github.com/romasho">GitHub</a>
-        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo" width="50"></a>
-        <time datetime="2021">2021</time>
-      </footer>
-   </div>
-    
     <style>
         
         header {
@@ -71,49 +14,111 @@
             font-size: 30px;
             font-weight: bold;
         }
-
+    
         .contacts {
             margin-top: 85px;
-            line-height: 6px;
+            
         }
-
+    
         #photo {
             margin-bottom: 40px;
         }
-
+    
         .cv {
             max-width: 900px;
             margin: 0 auto;
         }
-
+    
         h1 {
             text-align: center;
             color: #2f80ed;
         }
-
+    
         h3 {
             text-align: center;
             color: #2f80ed;
         }
-
+    
         h2 {
             text-align: center;
         }
-
+    
         div {
             margin-bottom: 1em;
         }
-
+    
         #photo {
             float: left;
         }
-
+    
         footer {
             text-align: center;
             background-color: #2f80ed; 
             padding: 10px 0px 0px 50px;
         }
     </style>
+    <title>My CV</title>
+</head>
+<body>
+    <main class="cv">
+        <header>CV</header>
+        <div class="maininf">
+                 <p><img id="photo" src="img/Mask_Group.png" alt="photo" width="130"></p>
+                <h1 class="name">Roman Sholomitski</h1>
+                <h2 class="name">Junior FrontEnd Developer</h2>
+        </div>
+   
+
+        <div class="contacts">    
+            <ul>
+                <li>Location: Minsk, Belarus</li>
+                <li>E-mail: sholomitskyr@yandex.by</li>
+                <li> Phone: +375299482743</li>
+            </ul>
+        </div>
+
+         <article class="about_me">
+             <h3>About me:</h3>
+                Enthusiastic and diligent junior FrontEnd Developer. Could learn new information and try
+                it on practice in a quick way. Prefer work as a part of a team for creating good
+                products. Want to join a team of professionals who will be able to share their 
+                experience. Ready to work hard for achieving the best result.
+        </article>
+
+            <div class="proffessionalSkils">
+                <h3>Professional Skills:</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>CSS/HTML5</li> 
+                    <li>Git</li> 
+                    <li>Python</li>
+                </ul>
+            </div>
+       
+            <div class="proffessionalSkils">
+                <h3>Code examples:</h3>
+                <a href="https://github.com/romasho/rsschool-cv/blob/gh-pages/index.html">HTML Markup Examples</a>
+            </div>
+
+         <article class="education">
+            <h3>Education:</h3>
+            <ul>
+                <li>2013-2017 - lawyer, BSU</li>
+                <li>March 2021 - May 2021 - Intro to IT, LeverX</li> 
+                <li>July 2021 - now - RS School</li> 
+            </ul> 
+        </article>
+
+        <article class="languages">
+            <h3>Languages:</h3>
+            English - A2+ (have a certificate)
+        </article>
     
+        <footer> 
+            <a href="https://github.com/romasho">GitHub</a>
+            <time>2021</time>
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo" width="50"></a>
+         </footer>
+        </main>  
 </body>
 </html>

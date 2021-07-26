@@ -1,3 +1,3 @@
-My CV
-https://romasho.github.io/rsschool-cv/cv
-https://romasho.github.io/rsschool-cv/
+1.My CV
+2.https://romasho.github.io/rsschool-cv/cv
+3. https://romasho.github.io/rsschool-cv/index.html

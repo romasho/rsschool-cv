@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700;800&display=swap');
+
 body {
     margin: 0;
   }
@@ -10,14 +12,41 @@ body {
 
 h1 {
     margin: 0 0 0 0;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
 }
 
 h2 {
+  font-family: 'Inter', sans-serif;
+    font-weight: 800;
+  font-size: 24px;
     padding-top: 60px;
     margin: 0 0 0 0;
     width: 100%;
     margin-bottom: 30px;
     position: relative;
+}
+
+h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.technology{
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #3366FF;
 }
 
 ul {
@@ -49,6 +78,17 @@ h2::after {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        box-shadow: 0px 4px 4px 0px #0000000D;
+      
+      }
+
+      .proff {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
       }
 
       li {
@@ -56,8 +96,10 @@ h2::after {
        }
     
        .nav {
-        padding: 0 75px 0 0;
+        margin-right: 30px;
         font-family: Source Sans Pro;
+        font-weight: normal;
+        color: black;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -75,6 +117,24 @@ h2::after {
     
       ul {
         margin: 0;
+      }
+
+      .my_name {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .about_me {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        text-indent: 15px;
       }
 
     main { 
@@ -103,6 +163,12 @@ h2::after {
 
       .name {
         margin-top: 15px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        
       }
 
       .about_me {
@@ -118,6 +184,7 @@ h2::after {
         height: 20px;
         margin-bottom: 15px;
         margin-left: -4px;
+        margin-right: 4px;
     }
     
     .ico_telegram {
@@ -154,6 +221,13 @@ h2::after {
 
     .contacts_link {
       padding-left: 35px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: black;
+      margin-bottom: 15px;
     }
 
     .contacts {
@@ -169,11 +243,35 @@ h2::after {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-          max-width: 430px;
+          max-width: 650px;
       }
 
       .el_skills {
-          margin-left: 80px;
+          margin-right: 50px;
+          text-align: left;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          width: 165px;
+      }
+
+      .el_education {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      b{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #3366FF;
       }
 
       .project_img {
@@ -209,7 +307,7 @@ h2::after {
     
 
     pre {
-      
+      font-size: 18px;
       white-space: pre-wrap;
       word-break: break-all;
     }

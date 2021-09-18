@@ -3,122 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <style>
-        
-        header {
-            text-align: left;
-            background-color: #2f80ed; 
-            padding: 10px 10px 10px 10px;
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-        }
-    
-        .contacts {
-            margin-top: 85px;
-            
-        }
-    
-        #photo {
-            margin-bottom: 40px;
-        }
-    
-        .cv {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-    
-        h1 {
-            text-align: center;
-            color: #2f80ed;
-        }
-    
-        h3 {
-            text-align: center;
-            color: #2f80ed;
-        }
-    
-        h2 {
-            text-align: center;
-        }
-    
-        div {
-            margin-bottom: 1em;
-        }
-    
-        #photo {
-            float: left;
-        }
-    
-        footer {
-            text-align: center;
-            background-color: #2f80ed; 
-            padding: 10px 0px 0px 50px;
-        }
-    </style>
+    <meta name="viewport">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>My CV</title>
 </head>
 <body>
-    <main class="cv">
-        <header>CV</header>
-        <div class="maininf">
-                 <p><img id="photo" src="img/Mask_Group.png" alt="photo" width="130"></p>
-                <h1 class="name">Roman Sholomitski</h1>
-                <h2 class="name">Junior FrontEnd Developer</h2>
-        </div>
-   
-
-        <div class="contacts">    
-            <ul>
-                <li>Location: Minsk, Belarus</li>
-                <li>E-mail: sholomitskyr@yandex.by</li>
-                <li> Phone: +375299482743</li>
-            </ul>
-        </div>
-
-         <article class="about_me">
-             <h3>About me:</h3>
-                Enthusiastic and diligent junior FrontEnd Developer. Could learn new information and try
-                it on practice in a quick way. Prefer work as a part of a team for creating good
-                products. Want to join a team of professionals who will be able to share their 
-                experience. Ready to work hard for achieving the best result.
-        </article>
-
-            <div class="proffessionalSkils">
-                <h3>Professional Skills:</h3>
+    <div class="container">
+        <header class="header_container">
+            <nav><ul class="nav_ul">
+                <li><a class="nav" href="#visiting">Main info</a></li>
+                <li><a class="nav" href="#Explore">Skils</a></li>
+                <li><a class="nav" href="#Video">Education</a></li>
+                <li><a class="nav" href="#Tickets">Projects</a></li>
+                <li><a class="nav" href="#Contacts">Code Exemple</a></li>
+                <li><a class="nav" href="#Contacts">Video</a></li>
+            </ul></nav>
+            <div class="my_name">
+                <p>Roman Sholomitski, CV</p>
+            </div> 
+        </header>
+        <main>
+            <aside> 
+               <img class='photo' src="/img/Mask_Group.png" alt="my_photo"> 
+               <div class="name">
+                   <h1>Roman Sholomitski</h1>
+                   <p>Junior FrontEnd Developer</p>
+               </div>
+               <div class="about_me"><p>
+                Enthusiastic and diligent junior FrontEnd Developer. Could learn new information and try it on practice in a quick way. Prefer work as a part of a team for creating good products. 
+               </p>
+            <p>
+                Want to join a team of professionals who will be able to share their experience. Ready to work hard for achieving the best result.
+            </p></div>
+            <div class="contacts">   
+                <h2>Contacts</h2> 
                 <ul>
-                    <li>JavaScript</li>
-                    <li>CSS/HTML5</li> 
-                    <li>Git</li> 
-                    <li>Python</li>
+                    <li class="ico_git"> <a class="contacts_link" href="https://github.com/romasho" >     github.com/romasho</a></li>
+                    <li class="ico_telegram"><a class="contacts_link" href="https://t.me/Roma_Sho" >     t.me/Roma_sho</a></li>
+                    <li class="ico_mail"><a class="contacts_link" href="mailto:sholomitskyr@yandex.by" >     sholomitskyr@yandex.by</a></li>
+                    <li class="ico_phone"><a class="contacts_link" href="tel:+375299482743" >     +375299482743</a></li>
+                    <li class="ico_location"><a class="contacts_link" href="https://goo.gl/maps/ht8VrY1KN5r4W3EF7">     Minsk, Belarus</a></li>
                 </ul>
             </div>
-       
-            <div class="proffessionalSkils">
-                <h3>Code examples:</h3>
-                <a href="https://github.com/romasho/rsschool-cv/blob/gh-pages/index.html">HTML Markup Examples</a>
-            </div>
-
-         <article class="education">
-            <h3>Education:</h3>
-            <ul>
-                <li>2013-2017 - lawyer, BSU</li>
-                <li>March 2021 - May 2021 - Intro to IT, LeverX</li> 
-                <li>July 2021 - now - RS School</li> 
-            </ul> 
-        </article>
-
-        <article class="languages">
-            <h3>Languages:</h3>
-            English - A2+ (have a certificate)
-        </article>
-    
-        <footer> 
-            <a href="https://github.com/romasho">GitHub</a>
-            <time>2021</time>
-            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo" width="50"></a>
-         </footer>
-        </main>  
+            </aside>
+            <div class="container">
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <p class="el_skills">JavaScript</p>
+                    <p class="el_skills">CSS</p>
+                    <p class="el_skills">HTML5</p>
+                    <p class="el_skills">Git</p>
+                    <p class="el_skills">English – A2+</p>
+                    <p class="el_skills">Python</p>
+                </section>
+                <section>
+                    <h2>Education</h2>
+                    <p class="el_education">2013-2017 –  lawyer, BSU</p>
+                    <p class="el_education">March 2021 –  Intro to IT, LeverX</p>
+                    <p class="el_education">July 2021 - Sep 2021 –  RS school, Stage 0</p>
+                    <p class="el_education">Sep 2021 - now –  RS school, Stage 1</p>
+                </section>
+                <section class="projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <img class="project_img" src="/img/MaskGroup.jpg" alt="project-1">
+                        <h3>Video player</h3>
+                        <p>The customized video player with custom controls, managing volume, playback rate, fullscreen mode, rewind back/forward by cursor and keyboard</p>
+                    </div>
+                    <div class="project">
+                        <img class="project_img" src="/img/MaskGroup2.jpg" alt="project-2">
+                        <h3>Endless slider</h3>
+                        <p>The endless photo and video slider with scrolling by cursor and scroll wheel</p>
+                    </div>
+                </section>
+                <section class="code_exemple"> 
+                    <h2>Code example</h2>
+                    <pre><code class="javascript">
+function indexEqualsValue(a) { 
+    let min = 0 
+    let max = a.length-1 
+    let mid 
+    let result = -1 
+                       
+    while (min <= max) { 
+        mid = Math.round(((max-min)/2)+min) 
+        if (mid === a[mid]) { 
+         result = mid; 
+         max = mid -1  }  
+        else if (mid < a[mid]) { 
+         max = mid -1}  
+        else {min = mid +1} 
+         }  
+    return result 
+}</code></pre>
+                </section>
+                <section>
+                    <h2>Video</h2>
+                    in progress
+                </section>
+             </div>    
+        </main>
+        
+        <footer>
+            <a href="https://rs.school/js/"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
+        </footer>
+        
+    </div>
 </body>
 </html>

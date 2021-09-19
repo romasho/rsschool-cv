@@ -391,13 +391,13 @@ h2::after {
 
   
 
-  @media (max-width: 855px) {
+  @media  screen and  (max-width: 855px) {
     .project {
       margin-right: 0;
   }
   }
 
-  @media (max-width: 740px) {
+  @media  screen and  (max-width: 740px) {
     main {
       flex-direction: column;
 
@@ -408,7 +408,7 @@ h2::after {
   }
   }
 
-  @media (max-width: 380px) {
+  @media screen and  (max-width: 380px) {
     .project_img {
       width: 298px;
     }

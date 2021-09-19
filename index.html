@@ -12,19 +12,19 @@
 </head>
 <body>
     <div class="container">
-        <header class="header_container">
+        <!-- <header class="header_container">
             <nav><ul class="nav_ul">
                 <li><a class="nav" href="#visiting">Main info</a></li>
-                <li><a class="nav" href="#Explore">Skills</a></li>
-                <li><a class="nav" href="#Video">Education</a></li>
-                <li><a class="nav" href="#Tickets">Projects</a></li>
-                <li><a class="nav" href="#Contacts">Code Example</a></li>
-                <li><a class="nav" href="#Contacts">Video</a></li>
+                <li><a class="nav" href="#Skills">Skills</a></li>
+                <li><a class="nav" href="#Education">Education</a></li>
+                <li><a class="nav" href="#Projects">Projects</a></li>
+                <li><a class="nav" href="#Code">Code Example</a></li>
+                <li><a class="nav" href="#Video">Video</a></li>
             </ul></nav>
             <div class="my_name">
                 <p>Roman Sholomitski, CV</p>
             </div> 
-        </header>
+        </header> -->
         <main>
             <aside> 
                <img class='photo' src="/img/Mask_Group.png" alt="my_photo"> 
@@ -50,7 +50,7 @@
             </div>
             </aside>
             <div class="container">
-                <section class="skills">
+                <section class="skills" id="Skills">
                     <h2>Skills</h2>
                     <p class="el_skills"><b>&lt;</b>  JavaScript <b>&gt;</b> </p>
                     <p class="el_skills"><b>&lt;</b>  CSS <b>&gt;</b></p>
@@ -59,29 +59,36 @@
                     <p class="el_skills"><b>&lt;</b>  English – A2+ <b>&gt;</b></p>
                     <p class="el_skills"><b>&lt;</b>  Python <b>&gt;</b> </p>
                 </section>
-                <section class="education">
+                <section class="education" id="Education">
                     <h2>Education</h2>
                     <p class="el_education"><b class="periods">2013-2017</b> –  Faculty of Law, BSU</p>
                     <p class="el_education"><b class="periods">March 2021 - May 2021</b> –  Intro to IT, LeverX</p>
                     <p class="el_education"><b class="periods">July 2021 - Sep 2021</b> –  RS school, Stage 0</p>
                     <p class="el_education"><b class="periods">Sep 2021 - now</b> –  RS school, Stage 1</p>
                 </section>
-                <section class="projects">
+                <section class="projects" id="Projects">
                     <h2>Projects</h2>
                     <div class="project">
-                        <img class="project_img" src="/img/MaskGroup.jpg" alt="project-1">
+                        <div class="project_container">
+                            <img class="project_img" src="/img/MaskGroup.jpg" alt="project-1">
+                            <button onclick="window.location.href = 'https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/videoHTML5/';">See the project</button>
+                        </div>
+                        
                         <p class="technology">HTML, CSS, JS</p>
                         <h3>Video player</h3>
                         <p class="about_me">The customized video player with custom controls, managing volume, playback rate, fullscreen mode, rewind back/forward by cursor and keyboard</p>
                     </div>
                     <div class="project">
-                        <img class="project_img" src="/img/MaskGroup2.jpg" alt="project-2">
+                        <div class="project_container">
+                            <img class="project_img" src="/img/MaskGroup2.jpg" alt="project-2">
+                            <button onclick="window.location.href = 'https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/Vertical%20Slider/slider/';"">See the project</button>
+                        </div>
                         <p class="technology">HTML, CSS, JS</p>
                         <h3>Endless slider</h3>
-                        <p class="about_me">The endless photo and video slider with scrolling by cursor and scroll wheel</p>
+                        <p class="about_me">The endless photo and video slider with scrolling by button, cursor and scroll wheel</p>
                     </div>
                 </section>
-                <section class="code_exemple"> 
+                <section class="code_exemple" id="Code"> 
                     <h2>Code example</h2>
                     <pre><code class="javascript">
 function indexEqualsValue(a) { 
@@ -102,10 +109,12 @@ function indexEqualsValue(a) {
     return result 
 }</code></pre>
                 </section>
-                <section>
+                <section class="video" id="Video">
                     <h2>Video</h2>
-                    in progress
-                </section>
+                    <div class="thumb-wrap">
+                        <iframe height="100%"  width="100%" src="https://www.youtube.com/embed/i3Wgn9Cbxj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    </section>
              </div>    
         </main>
         

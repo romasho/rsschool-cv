@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <title>My CV</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header_container">
+                <div class="burger">
+                    
+                </div>
+                <nav><ul class="navul">
+                    <li><a class="nav" href="#Main_info">Main info</a></li>
+                    <li><a class="nav" href="#Skills">Skills</a></li>
+                    <li><a class="nav" href="#Education">Education</a></li>
+                    <li><a class="nav" href="#Projects">Projects</a></li>
+                    <li><a class="nav" href="#Code">Code Example</a></li>
+                    <li><a class="nav" href="#Video">Video</a></li>
+                </ul></nav>
+                <div class="my_name">
+                    <p>Roman Sholomitski, CV</p>
+                </div> 
+            </div>
+        </header>
+        <main id="Main_info">
+            <aside> 
+               <img class='photo' src="img/Mask_Group.png" alt="my_photo"> 
+               <div class="name">
+                   <h1>Roman Sholomitski</h1>
+                   <p class="proff">Junior FrontEnd Developer</p>
+               </div>
+               <div class="about_me"><p>
+                Enthusiastic and diligent junior FrontEnd Developer. Could learn new information and try it on practice in a quick way. Prefer work as a part of a team for creating good products. 
+               </p>
+            <p>
+                Want to join a team of professionals who will be able to share their experience. Ready to work hard for achieving the best result.
+            </p></div>
+            <div class="contacts">   
+                <h2>Contacts</h2> 
+                <ul>
+                    <li class="ico_git"> <a class="contacts_link" href="https://github.com/romasho" >     github.com/romasho</a></li>
+                    <li class="ico_telegram"><a class="contacts_link" href="https://t.me/Roma_Sho" >     t.me/Roma_sho</a></li>
+                    <li class="ico_mail"><a class="contacts_link" href="mailto:sholomitskyr@yandex.by" >     sholomitskyr@yandex.by</a></li>
+                    <li class="ico_phone"><a class="contacts_link" href="tel:+375299482743" >     +375299482743</a></li>
+                    <li class="ico_location"><a class="contacts_link" href="https://goo.gl/maps/ht8VrY1KN5r4W3EF7">     Minsk, Belarus</a></li>
+                </ul>
+            </div>
+            </aside>
+            <div class="container">
+                <section class="skills" id="Skills">
+                    <h2>Skills</h2>
+                    <ul class="skills">
+                        <li class="el_skills"><b>&lt;</b>  JavaScript <b>&gt;</b> </li>
+                        <li class="el_skills"><b>&lt;</b>  CSS <b>&gt;</b></li>
+                        <li class="el_skills"><b>&lt;</b>  HTML5 <b>&gt;</b> </li>
+                        <li class="el_skills"><b>&lt;</b>  Git <b>&gt;</b> </li>
+                        <li class="el_skills"><b>&lt;</b>  English – A2+ <b>&gt;</b></li>
+                        <li class="el_skills"><b>&lt;</b>  Python <b>&gt;</b> </li>
+                    </ul>
+                </section>
+                <section class="education" id="Education">
+                    <h2>Education</h2>
+                    <p class="el_education"><b class="periods">2013-2017</b> –  Faculty of Law, BSU</p>
+                    <p class="el_education"><b class="periods">March 2021 - May 2021</b> –  Intro to IT, LeverX</p>
+                    <p class="el_education"><b class="periods">July 2021 - Sep 2021</b> –  RS school, Stage 0</p>
+                    <p class="el_education"><b class="periods">Sep 2021 - now</b> –  RS school, Stage 1</p>
+                </section>
+                <section class="projects" id="Projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <div class="project_container">
+                            <img class="project_img" src="img/MaskGroup.jpg" alt="project-1">
+                            <button onclick="window.open('https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/videoHTML5/')">See the project</button>
+                        </div>
+                        
+                        <p class="technology">HTML, CSS, JS</p>
+                        <h3>Video player</h3>
+                        <p class="about_me">The customized video player with custom controls, managing volume, playback rate, fullscreen mode, rewind back/forward by cursor and keyboard</p>
+                    </div>
+                    <div class="project">
+                        <div class="project_container">
+                            <img class="project_img" src="img/MaskGroup2.jpg" alt="project-2">
+                            <button onclick="window.open('https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/Vertical%20Slider/slider/')">See the project</button>
+                        </div>
+                        <p class="technology">HTML, CSS, JS</p>
+                        <h3>Endless slider</h3>
+                        <p class="about_me">The endless photo and video slider with scrolling by button, cursor and scroll wheel</p>
+                    </div>
+                </section>
+                <section class="code_exemple" id="Code"> 
+                    <h2>Code example</h2>
+                    <pre><code class="javascript">
+function indexEqualsValue(a) { 
+    let min = 0 
+    let max = a.length-1 
+    let mid 
+    let result = -1 
+                       
+    while (min &lt;= max) { 
+        mid = Math.round(((max-min)/2)+min) 
+        if (mid === a[mid]) { 
+         result = mid; 
+         max = mid -1  }  
+        else if (mid &lt; a[mid]) { 
+         max = mid -1}  
+        else {min = mid +1} 
+         }  
+    return result 
+}</code></pre>
+                </section>
+                <section class="video" id="Video">
+                    <h2>Video</h2>
+                    <div class="thumb-wrap">
+                        <iframe src="https://www.youtube.com/embed/VKYIPQxJl7k" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    </section>
+             </div>    
+        </main>
+        
+        <footer>
+          <time>2021</time>  <a href="https://rs.school/js/"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
+        </footer>
+        
+    </div>
+    <script src="JS/app.js"></script>
+</body>
+</html>

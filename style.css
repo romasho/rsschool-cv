@@ -10,6 +10,10 @@ body {
     margin: 0;
   }
 
+ main {
+  padding-top: 60px;
+ } 
+
   a {
     text-decoration: none;
   }
@@ -76,14 +80,24 @@ h2::after {
     flex-wrap: nowrap;
 }
 
-    .header_container {
-        height: 60px;
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .header_container {
+        min-height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        background-color: #fff;
         box-shadow: 0px 4px 4px 0px #0000000D;
-      
       }
 
       .proff {
@@ -113,6 +127,10 @@ h2::after {
         margin-bottom: 15px;
       }
 
+      .nav:hover {
+        color: #3366FF;
+      }
+
       .nav_ul {
         padding: 0;
         display: flex;
@@ -124,6 +142,7 @@ h2::after {
       }
 
       .my_name {
+       
         font-family: Inter;
         font-style: normal;
         font-weight: bold;
@@ -158,6 +177,7 @@ h2::after {
         align-items: center;
       }
 
+      
       .photo {
         width: 200px;
         height: 200px;
@@ -187,8 +207,6 @@ h2::after {
         width: 303px;
         height: 20px;
         margin-bottom: 15px;
-        margin-left: -4px;
-        margin-right: 4px;
     }
     
     .ico_telegram {
@@ -232,6 +250,11 @@ h2::after {
       line-height: 24px;
       color: black;
       margin-bottom: 15px;
+    }
+
+    .contacts_link:hover {
+      color: #3366FF;
+      text-decoration: underline;
     }
 
     .contacts {
@@ -310,6 +333,7 @@ h2::after {
     .logo {
         width: 90px;
         height: 33px;
+        margin-right: 40px;
     }
     
 
@@ -355,8 +379,8 @@ h2::after {
     }
 
     a, button {
-      -webkit-transition: all 1.3s ease-in-out;
-      transition: all 1.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
     a:hover, button:hover {
       -webkit-transition: all 0.3s ease-in-out;
@@ -390,12 +414,45 @@ h2::after {
     }
 
   
+    .burger {
+      
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      display: none;
+    }
 
-  @media  screen and  (max-width: 855px) {
+    .close{
+      background-image: url(img/close.svg);
+    }
+
+    .open {
+      background-image: url(img/burger_menu.svg);
+    }
+
+  @media  screen and  (max-width: 870px) {
     .project {
       margin-right: 0;
   }
+
+    .burger {
+      display: block;
+      margin-left: 20px;
+    }
+
+    .nav_ul {
+      display: none;
+      flex-direction: column;
+    }
+    
+    .header_container {
+      justify-content: space-between;
+      
+    }
   }
+
+ 
 
   @media  screen and  (max-width: 740px) {
     main {
@@ -406,6 +463,10 @@ h2::after {
     width: 100%;
     max-width: 100%;
   }
+  .project_img {
+    width: 350px;
+  }
+
   }
 
   @media screen and  (max-width: 380px) {

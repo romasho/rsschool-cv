@@ -13,22 +13,27 @@
 </head>
 <body>
     <div class="container">
-        <!-- <header class="header_container">
-            <nav><ul class="nav_ul">
-                <li><a class="nav" href="#visiting">Main info</a></li>
-                <li><a class="nav" href="#Skills">Skills</a></li>
-                <li><a class="nav" href="#Education">Education</a></li>
-                <li><a class="nav" href="#Projects">Projects</a></li>
-                <li><a class="nav" href="#Code">Code Example</a></li>
-                <li><a class="nav" href="#Video">Video</a></li>
-            </ul></nav>
-            <div class="my_name">
-                <p>Roman Sholomitski, CV</p>
-            </div> 
-        </header> -->
-        <main>
+        <header class="header">
+            <div class="header_container">
+                <div class="burger open">
+                    
+                </div>
+                <nav><ul class="nav_ul">
+                    <li><a class="nav" href="#Main_info">Main info</a></li>
+                    <li><a class="nav" href="#Skills">Skills</a></li>
+                    <li><a class="nav" href="#Education">Education</a></li>
+                    <li><a class="nav" href="#Projects">Projects</a></li>
+                    <li><a class="nav" href="#Code">Code Example</a></li>
+                    <li><a class="nav" href="#Video">Video</a></li>
+                </ul></nav>
+                <div class="my_name">
+                    <p>Roman Sholomitski, CV</p>
+                </div> 
+            </div>
+        </header>
+        <main id="Main_info">
             <aside> 
-               <img class='photo' src="/img/Mask_Group.png" alt="my_photo"> 
+               <img class='photo' src="img/Mask_Group.png" alt="my_photo"> 
                <div class="name">
                    <h1>Roman Sholomitski</h1>
                    <p class="proff">Junior FrontEnd Developer</p>
@@ -71,7 +76,7 @@
                     <h2>Projects</h2>
                     <div class="project">
                         <div class="project_container">
-                            <img class="project_img" src="/img/MaskGroup.jpg" alt="project-1">
+                            <img class="project_img" src="img/MaskGroup.jpg" alt="project-1">
                             <button onclick="window.location.href = 'https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/videoHTML5/';">See the project</button>
                         </div>
                         
@@ -81,8 +86,8 @@
                     </div>
                     <div class="project">
                         <div class="project_container">
-                            <img class="project_img" src="/img/MaskGroup2.jpg" alt="project-2">
-                            <button onclick="window.location.href = 'https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/Vertical%20Slider/slider/';"">See the project</button>
+                            <img class="project_img" src="img/MaskGroup2.jpg" alt="project-2">
+                            <button onclick="window.location.href = 'https://rolling-scopes-school.github.io/romasho-JSFEPRESCHOOL/Vertical%20Slider/slider/';">See the project</button>
                         </div>
                         <p class="technology">HTML, CSS, JS</p>
                         <h3>Endless slider</h3>
@@ -98,12 +103,12 @@ function indexEqualsValue(a) {
     let mid 
     let result = -1 
                        
-    while (min <= max) { 
+    while (min &lt;= max) { 
         mid = Math.round(((max-min)/2)+min) 
         if (mid === a[mid]) { 
          result = mid; 
          max = mid -1  }  
-        else if (mid < a[mid]) { 
+        else if (mid &lt; a[mid]) { 
          max = mid -1}  
         else {min = mid +1} 
          }  
@@ -113,7 +118,7 @@ function indexEqualsValue(a) {
                 <section class="video" id="Video">
                     <h2>Video</h2>
                     <div class="thumb-wrap">
-                        <iframe height="100%"  width="100%" src="https://www.youtube.com/embed/i3Wgn9Cbxj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/VKYIPQxJl7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     </section>
              </div>    
@@ -124,5 +129,6 @@ function indexEqualsValue(a) {
         </footer>
         
     </div>
+    <script src="JS/app.js"></script>
 </body>
 </html>

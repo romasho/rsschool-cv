@@ -1,17 +1,17 @@
-const burger = document.querySelector('.burger')
-const name = document.querySelector('.my_name')
-const nav = document.querySelector('.nav_ul')
-burger.addEventListener('click', toggle)
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.navul');
+const name = document.querySelector('.my_name');
+const header = document.querySelector('.header_container');
 
-function toggle() {
-    if ((burger.classList.contains("open"))) {
-        burger.classList.remove("open")
-        burger.classList.add("close")
-        name.style.display = 'none'
-        
-    } else {burger.classList.remove("close")
-             burger.classList.add("open")
-             name.style.display = 'block'
-             }
-}
+(function () {
+    burger.addEventListener('click', () =>{
+        burger.classList.toggle('burger_open');
+        menu.classList.toggle('navul_open');
+        name.classList.toggle('my_name__open');
+        header.classList.toggle('header_container__open');
+    })
+}())
 
+
+
+ 

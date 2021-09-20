@@ -150,6 +150,7 @@ h2::after {
 
       .my_name {
         margin-left: auto;
+        padding-right: 10px;
         font-family: Inter;
         font-style: normal;
         font-weight: bold;
@@ -281,6 +282,7 @@ h2::after {
       }
 
       .el_skills {
+        margin-bottom: 20px;
           margin-right: 50px;
           text-align: left;
           font-family: Inter;
@@ -356,7 +358,7 @@ h2::after {
     }
 
     section {
-      margin: 3%;
+      margin: 0 3%;
     }
 
     .project_container {
@@ -409,6 +411,7 @@ h2::after {
       padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
       height: 0;
       overflow: hidden;
+      margin-bottom: 20px;
     }
     .thumb-wrap iframe {
       position: absolute;
@@ -418,9 +421,16 @@ h2::after {
       height: 100%;
       border-width: 0;
       outline-width: 0;
+      
     }
 
-  
+    time {
+      margin-right: auto;
+      margin-left: 25px;
+      font-weight: 600;
+      font-family: Inter;
+    }
+
     .burger {
       background-image: url(img/burger_menu.svg);
       background-repeat: no-repeat;
@@ -464,8 +474,9 @@ h2::after {
     .header_container__open {
       padding-top: 12px;
       margin-left: 0;
-      opacity: 0.77;
+      opacity: 0.9;
       width: 200px;
+      box-shadow: 0px 4px 4px 0px #0000000D;
     }
 
     .nav {
